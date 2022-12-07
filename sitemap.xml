@@ -13,95 +13,18 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.dmytronaida.com/about.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.dmytronaida.com/posts.html</loc>
   <lastmod>2022-12-07T06:54:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.dmytronaida.com/about.html</loc>
+  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
   <loc>https://www.dmytronaida.com/resume.html</loc>
   <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
-<url>
-  <loc>https://www.dmytronaida.com/2022/12/07/product-management-in-practice-book-review.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2022/10/31/product-manager-job-search-in-germany-and-austria.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/11/06/how-does-internet-work.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/09/06/js-120-afterword.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/07/10/js109-interview-assessment.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/05/27/js109-written-assessment.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/04/13/variable-scope.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2020/04/10/launch-school-js-101.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2019/12/11/go-practice-course-review.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2019/08/29/devcom-2019.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2019/07/18/learn-enough-javascript-to-be-dangerous.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2019/05/30/learning-the-command-line.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/2019/05/15/how-to-make-a-personal-website-with-jekyll.html</loc>
-  <lastmod>2022-12-07T06:54:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/assets/dnaida_Goethe-ZertifikatB2.pdf</loc>
-  <lastmod>2022-12-07T06:54:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.dmytronaida.com/assets/dnaida-resume.pdf</loc>
-  <lastmod>2022-12-07T06:54:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
