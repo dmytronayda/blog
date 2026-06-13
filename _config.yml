@@ -1,9 +1,9 @@
 # site settings
 title: Dmytro Naida
-subtitle: Product Manager
+subtitle: Senior Product Manager
 email: dmytro.naida@icloud.com
 phone: n/a
-description: My name is Dima Naida and I'm a Sr. Product Manager at AutoScout24. Prior to that, I was working as a PM at Red Bull Media House, developing action sports games for mobile. I come from Ukraine 🇺🇦 and do CrossFit.
+description: Senior Product Manager at EGYM Wellpass, building corporate fitness technology products used by thousands of businesses in Europe. Previously PM at AutoScout24 and Red Bull Media House, where I shipped mobile gaming products. Originally from Ukraine 🇺🇦, based in Munich.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dmytronaida.com" # the base hostname & protocol for your site
 author: Dmytro Naida
@@ -16,10 +16,11 @@ tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 10
 
 # social settings
-facebook_url: https://www.facebook.com/dmytro.naida
 github_url: https://github.com/dmytronayda
 linkedin_url: https://www.linkedin.com/in/dmytro-naida
-twitter_url: https://twitter.com/cadet_93
+
+# open graph / social sharing
+og_image: assets/images/about-me.jpg
 
 # build settings
 markdown: kramdown
