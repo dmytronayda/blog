@@ -38,7 +38,7 @@
                     <a target="_blank" href="https://egym.com/">EGYM Wellpass</a>, building corporate fitness technology
                     products used by thousands of businesses in Europe. Before that, I was a Sr. PM at
                     AutoScout24 and a Product Manager at Red Bull Media House, where I shipped
-                    mobile gaming products. I come from Ukraine 🇺🇦, am based in Munich, and
+                    mobile gaming products. I come from <a target="_blank" href="https://en.wikipedia.org/wiki/Lebedyn">Lebedyn, Ukraine</a> 🇺🇦, am based in Munich, and
                     spend my free time doing CrossFit, mountain biking, and hiking.
                 </p>
                 <p>You can find my writing on product management, technology, and the occasional
@@ -256,12 +256,16 @@
                 <h2>When I'm not at work</h2>
             </header>
             <p>Doing CrossFit, hiking — most recently I walked 125 km across Spain in 5 days on the Camino de Santiago — hunting for a new song to put on repeat, and cooking ambitious breakfasts. Pancakes with mascarpone, honey, and peaches are a personal signature.</p>
-            <div class="box alt">
-                <div class="row 50% uniform">
-                    <div class="4u"><span class="image fit" style="height:220px;overflow:hidden;display:block;"><img src="/assets/images/crossfit-1.jpg" alt="CrossFit" style="width:100%;height:100%;object-fit:cover;" /></span></div>
-                    <div class="4u"><span class="image fit" style="height:220px;overflow:hidden;display:block;"><img src="/assets/images/in-spain.jpg" alt="Camino de Santiago, Day 4 — 90 km in" style="width:100%;height:100%;object-fit:cover;" /></span></div>
-                    <div class="4u$"><span class="image fit" style="height:220px;overflow:hidden;display:block;"><img src="/assets/images/food-1.jpg" alt="Cooking" style="width:100%;height:100%;object-fit:cover;" /></span></div>
-                </div>
+            <div class="about-gallery-grid">
+                <figure class="about-gallery-card about-gallery-card--feature">
+                    <img src="/assets/images/in-spain.jpg" alt="Camino de Santiago, Day 4 — 90 km in" onclick="openLightbox(this.src)" />
+                    <figcaption><strong>Camino de Santiago</strong><span>125 km through Spain</span></figcaption>
+                </figure>
+                <figure class="about-gallery-card"><img src="/assets/images/crossfit-1.jpg" alt="CrossFit" onclick="openLightbox(this.src)" /><figcaption><strong>CrossFit</strong><span>Strength and consistency</span></figcaption></figure>
+                <figure class="about-gallery-card"><img src="/assets/images/food-1.jpg" alt="Cooking" onclick="openLightbox(this.src)" /><figcaption><strong>Breakfast experiments</strong><span>Mascarpone, honey, peaches</span></figcaption></figure>
+                <figure class="about-gallery-card"><img src="/assets/images/travel-1.jpg" alt="Travels" onclick="openLightbox(this.src)" /><figcaption><strong>Travels</strong><span>Always looking for the next trail</span></figcaption></figure>
+                <figure class="about-gallery-card"><img src="/assets/images/travel-3.jpg" alt="More walking" onclick="openLightbox(this.src)" /><figcaption><strong>More walking</strong><span>Outside whenever possible</span></figcaption></figure>
+                <figure class="about-gallery-card"><img src="/assets/images/food-2.jpg" alt="Things I cook" onclick="openLightbox(this.src)" /><figcaption><strong>Things I cook</strong><span>Ambitious breakfasts included</span></figcaption></figure>
             </div>
 
             <hr class="major" />
@@ -269,25 +273,75 @@
             <header class="major">
                 <h2>A bit more about me</h2>
             </header>
-            <div class="row">
-                <div class="6u 12u$(small)">
+            <div class="about-facts-grid">
+                <div class="about-facts-copy">
                     <ul>
                         <li>Was a chubby blond little dumpling as a kid — see right.</li>
                         <li>Spent a year in Itasca, Texas as a high school exchange student (2009–2010) through the FLEX program.</li>
                         <li>Served in the Ukrainian Armed Forces (2015–2016) during the conflict in Eastern Ukraine.</li>
                         <li>Walked the Camino de Santiago — 125 km in 5 days through Spain. Would do it again.</li>
-                        <li>My alternate career: teaching. Probably math.</li>
+                        <li>My alternate career: teaching. Probably math. Possibly Ukrainian.</li>
                     </ul>
                 </div>
-                <div class="6u$ 12u$(small)">
-                    <span class="image fit"><img src="/assets/images/kid-1.jpg" alt="Young Dima" /></span>
-                </div>
+                <figure class="about-childhood-card">
+                    <img src="/assets/images/chubby-kid.jpg" alt="Young Dima as a chubby kid" onclick="openLightbox(this.src)" />
+                    <figcaption>Chubby blond little dumpling, circa childhood.</figcaption>
+                </figure>
             </div>
 
         </div>
     </section>
 
+    <!-- Right now -->
+    <section id="right-now" class="about-lower-section">
+        <div class="inner">
+            <header class="major">
+                <h2>Right now</h2>
+            </header>
+            <div class="about-meta-row">
+                <span>Last updated: 30 September 2026</span>
+            </div>
+            <ul>
+                <li>📺 Watching <a target="_blank" href="https://www.imdb.com/title/tt1190634/"><em>\"The Boys\"</em></a> on Prime Video.</li>
+                <li>😂 Laughing at Chirkov's stand-up <a target="_blank" href="https://youtu.be/bIhwgQ4BXLM?t=2584"><em>\"Кафе-шантан\"</em></a> (Ukrainian).</li>
+                <li>📖 Reading — and crying from — <a target="_blank" href="https://starylev.com.ua/knyga-gemingvey-nicogo-ne-znaye"><em>\"Гемінгвей нічого не знає\"</em></a> by Artur Dron (Ukrainian).</li>
+            </ul>
+            <p><a href="{{ site.baseurl }}/archive.html" class="button small">Browse the archive of links and recommendations</a></p>
+        </div>
+    </section>
+
+    <!-- Spotify -->
+    <section id="music" class="about-lower-section">
+        <div class="inner">
+            <header class="major">
+                <h2>On repeat</h2>
+            </header>
+            <p>The music I've been listening to lately — hate it? Tell me what you'd replace it with.</p>
+            <iframe style="border-radius:4px;" src="https://open.spotify.com/embed/playlist/4UenN9KEuw35eCxEHNLo8x?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <div class="about-lightbox" id="about-lightbox" onclick="closeAboutLightbox()" aria-hidden="true">
+        <button type="button" class="about-lightbox-close" aria-label="Close image">&times;</button>
+        <img id="about-lightbox-image" src="" alt="" />
+    </div>
+
     {% include footer.html %}
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('about-lightbox-image').src = src;
+            document.getElementById('about-lightbox').classList.add('active');
+            document.getElementById('about-lightbox').setAttribute('aria-hidden', 'false');
+        }
+        function closeAboutLightbox() {
+            document.getElementById('about-lightbox').classList.remove('active');
+            document.getElementById('about-lightbox').setAttribute('aria-hidden', 'true');
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') closeAboutLightbox();
+        });
+    </script>
 
 </body>
 

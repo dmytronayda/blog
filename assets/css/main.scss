@@ -7,6 +7,56 @@
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
+/* About page design system: editorial cards, compact metadata, mobile-first spacing */
+.about-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85em; max-width: 58em; margin: 1.5em auto 2em; }
+.about-gallery-card, .about-childhood-card { position: relative; overflow: hidden; margin: 0; border: 1px solid _palette(border); background: _palette(border-bg); }
+.about-gallery-card { min-height: 12em; aspect-ratio: 1.25; }
+.about-gallery-card--feature { grid-column: auto; min-height: 12em; }
+.about-gallery-card img, .about-childhood-card img { display: block; width: 100%; height: 100%; min-height: 12em; object-fit: cover; cursor: zoom-in; transition: opacity .2s ease-in-out, transform .25s ease; }
+.about-gallery-card img:hover, .about-childhood-card img:hover { opacity: .8; }
+.about-gallery-card--feature img { min-height: 12em; }
+.about-gallery-card:hover img, .about-childhood-card:hover img { transform: scale(1.04); }
+.about-gallery-card figcaption, .about-childhood-card figcaption { position: absolute; right: 0; bottom: 0; left: 0; display: flex; flex-direction: column; gap: .15em; padding: 2.5em 1em .8em; color: _palette(fg); background: linear-gradient(transparent, rgba(20,22,40,.9)); font-size: .8em; }
+.about-gallery-card figcaption strong { font-size: 1.1em; }
+.about-gallery-card figcaption span { opacity: .7; }
+.about-facts-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(14em, .75fr); gap: 2em; align-items: start; }
+.about-childhood-card { width: min(100%, 20em); min-height: 17em; }
+.about-childhood-card img { min-height: 17em; }
+.about-meta-row { display: flex; flex-wrap: wrap; gap: .5em 2em; margin: 1em 0 1.25em; padding: .85em 1em; border-left: 3px solid _palette(accent1); background: _palette(border-bg); color: _palette(fg); font-size: 1em; font-weight: 600; letter-spacing: .02em; }
+.about-meta-row span { display: inline-flex; flex-wrap: wrap; gap: .4em; }
+.about-meta-row strong { color: _palette(fg); }
+.about-lightbox { display: none; position: fixed; inset: 0; z-index: 20000; align-items: center; justify-content: center; padding: 24px; background: rgba(0, 0, 0, .88); cursor: zoom-out; }
+.about-lightbox.active { display: flex; }
+.about-lightbox img { max-width: 92vw; max-height: 90vh; border: 1px solid _palette(border); border-radius: 4px; }
+.about-lightbox-close { position: absolute; top: 20px; right: 28px; border: 0; background: transparent; color: #fff; font-size: 2rem; line-height: 1; cursor: pointer; }
+.about-lower-section > .inner, .archive-page > .inner { width: calc(100% - 6em); max-width: _size(inner); margin: 0 auto; }
+.archive-page { width: 100%; }
+.archive-page > .inner { padding: 4em 0; }
+.archive-page h2, .archive-page h3 { margin-top: 1.5em; }
+.archive-page ul { margin-bottom: 1.5em; }
+.archive-page li { margin-bottom: .5em; }
+@media screen and (max-width: 736px) {
+  /* Instagram-style mobile gallery: compact square thumbnails, tap to expand. */
+  .about-gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; margin-left: -0.5em; margin-right: -0.5em; }
+  .about-gallery-card, .about-gallery-card--feature { grid-column: auto; min-height: 0; aspect-ratio: 1; border: 0; }
+  .about-gallery-card img, .about-gallery-card--feature img { width: 100%; height: 100%; min-height: 0; max-height: none; object-fit: cover; }
+  .about-gallery-card figcaption, .about-gallery-card--feature figcaption { gap: 0; padding: 1.8em .35em .3em; font-size: .58em; line-height: 1.15; }
+  .about-gallery-card figcaption strong { font-size: 1em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .about-gallery-card figcaption span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .about-facts-grid { grid-template-columns: 1fr; gap: 1em; }
+  .about-childhood-card { min-height: 16em; }
+  .about-childhood-card img { min-height: 16em; }
+  .about-meta-row { flex-direction: column; gap: .5em; }
+  .about-lower-section > .inner, .archive-page > .inner { width: calc(100% - 3em); }
+  .archive-page > .inner { padding: 3em 0; }
+}
+
+@media screen and (max-width: 480px) {
+  .about-gallery-grid { gap: 2px; }
+  .about-gallery-card figcaption, .about-gallery-card--feature figcaption { font-size: .55em; }
+  .about-childhood-card, .about-childhood-card img { min-height: 12em; max-height: 16em; }
+}
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
