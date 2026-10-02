@@ -5,10 +5,11 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&subset=cyrillic,cyrillic-ext,latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
 /* About page design system: editorial cards, compact metadata, mobile-first spacing */
 /* Allow long button labels to wrap on mobile instead of overflowing the viewport */
+#right-now, #right-now li, #right-now li a, #right-now li em { font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: inherit; letter-spacing: _font(letter-spacing); }
 #right-now .button { white-space: normal; height: auto; min-height: 3.5em; line-height: 1.3; padding: .9em 1.4em; max-width: 100%; }
 .about-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85em; max-width: 58em; margin: 1.5em auto 2em; }
 .about-gallery-card, .about-childhood-card { position: relative; overflow: hidden; margin: 0; border: 1px solid _palette(border); background: _palette(border-bg); }
