@@ -33,11 +33,6 @@
 .about-lightbox img { max-width: 92vw; max-height: 90vh; border: 1px solid _palette(border); border-radius: 4px; }
 .about-lightbox-close { position: absolute; top: 20px; right: 28px; border: 0; background: transparent; color: #fff; font-size: 2rem; line-height: 1; cursor: pointer; }
 .about-lower-section > .inner, .archive-page > .inner { width: calc(100% - 6em); max-width: _size(inner); margin: 0 auto; }
-.newsletter-form { display: flex; flex-wrap: wrap; gap: .75em; margin: 1.25em 0 .75em; }
-.newsletter-form input[type="email"] { flex: 1 1 16em; min-width: 0; padding: .75em 1em; background: _palette(border-bg); border: 1px solid _palette(border); border-radius: 4px; color: _palette(fg); font-size: 1em; }
-.newsletter-form input[type="email"]:focus { border-color: _palette(accent1); outline: none; }
-.newsletter-form button { flex: 0 0 auto; white-space: normal; }
-.newsletter-note { font-size: .85em; color: _palette(fg-light); }
 .archive-page { width: 100%; }
 .archive-page > .inner { padding: 4em 0; }
 .archive-page h2, .archive-page h3 { margin-top: 1.5em; }

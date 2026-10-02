@@ -30,4 +30,3 @@ sass:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-feed
