@@ -1,6 +1,5 @@
 # site settings
 title: Dmytro Naida
-subtitle: Senior Product Manager
 email: dmytro.naida@icloud.com
 phone: n/a
 description: Senior Product Manager at EGYM Wellpass, building corporate fitness technology products used by thousands of businesses in Europe. Previously PM at AutoScout24 and Red Bull Media House, where I shipped mobile gaming products. Originally from Ukraine 🇺🇦, based in Munich.
@@ -31,3 +30,4 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
