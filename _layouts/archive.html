@@ -14,7 +14,27 @@
         </div>
     </section>
 
+    <div class="about-lightbox" id="archive-lightbox" onclick="closeArchiveLightbox()" aria-hidden="true">
+        <button type="button" class="about-lightbox-close" aria-label="Close image">&times;</button>
+        <img id="archive-lightbox-image" src="" alt="" />
+    </div>
+
     {% include footer.html %}
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('archive-lightbox-image').src = src;
+            document.getElementById('archive-lightbox').classList.add('active');
+            document.getElementById('archive-lightbox').setAttribute('aria-hidden', 'false');
+        }
+        function closeArchiveLightbox() {
+            document.getElementById('archive-lightbox').classList.remove('active');
+            document.getElementById('archive-lightbox').setAttribute('aria-hidden', 'true');
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') closeArchiveLightbox();
+        });
+    </script>
 
 </body>
 
