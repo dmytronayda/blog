@@ -87,7 +87,7 @@
                     </div>
                     <!-- End Flex Program -->
 
-                    <div id="timeline-collapsed-items" class="timeline-collapsed">
+                    <div id="timeline-collapsed-items" class="timeline-collapsed" style="display: none;">
                     <!-- War Times -->
                     <div class="cd-timeline-block">
                         <div class="cd-timeline-img cd-movie"></div>
@@ -247,7 +247,7 @@
                 </section>
                 <!-- cd-timeline -->
 
-                <button id="timeline-toggle" class="timeline-toggle-btn">
+                <button id="timeline-toggle" class="timeline-toggle-btn" type="button" aria-expanded="false" aria-controls="timeline-collapsed-items">
                     <span class="toggle-text">View more timeline items</span>
                     <span class="toggle-icon">⌄</span>
                 </button>
@@ -361,16 +361,14 @@
         
         if (timelineToggle && collapsedItems) {
             timelineToggle.addEventListener('click', function () {
-                collapsedItems.classList.toggle('visible');
-                timelineToggle.classList.toggle('expanded');
-                
+                const isExpanded = collapsedItems.classList.toggle('visible');
+                collapsedItems.style.display = isExpanded ? 'block' : 'none';
+                timelineToggle.classList.toggle('expanded', isExpanded);
+                timelineToggle.setAttribute('aria-expanded', String(isExpanded));
+
                 // Update button text
                 const textSpan = timelineToggle.querySelector('.toggle-text');
-                if (collapsedItems.classList.contains('visible')) {
-                    textSpan.textContent = 'Collapse timeline';
-                } else {
-                    textSpan.textContent = 'View more timeline items';
-                }
+                textSpan.textContent = isExpanded ? 'Collapse timeline' : 'View more timeline items';
             });
         }
     </script>
