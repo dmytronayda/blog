@@ -11,6 +11,7 @@ A record of things I have shared in the [Right now]({{ site.baseurl }}/about.htm
 
 ### October 2026
 
+- 💪 Laughing at the CrossFit exercises I am doing and sharpening my knife-sharpening skills 🔪
 - 📚 [Володимир Стасишин, «Для стосунків потрібні двоє»](https://welib.org/md5/dec4a74d8e2b739873a28ce6a61fd55d) — a Ukrainian book I am reading.
 - 🔒 [NordPass](https://nordpass.com/) — the password manager I am moving to from 1Password because it is cheaper and has email masking.
 - 📲 [Lifecell eSIM](https://www.lifecell.ua/en/) — my first eSIM setup, keeping the Ukrainian number always active without changing the physical SIM.

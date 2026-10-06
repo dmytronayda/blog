@@ -87,6 +87,7 @@
                     </div>
                     <!-- End Flex Program -->
 
+                    <div id="timeline-collapsed-items" class="timeline-collapsed">
                     <!-- War Times -->
                     <div class="cd-timeline-block">
                         <div class="cd-timeline-img cd-movie"></div>
@@ -240,9 +241,16 @@
                         </div>
                     </div>
                     <!-- End eGym -->
+                    </div>
+                    <!-- End timeline-collapsed-items -->
 
                 </section>
                 <!-- cd-timeline -->
+
+                <button id="timeline-toggle" class="timeline-toggle-btn">
+                    <span class="toggle-text">View more timeline items</span>
+                    <span class="toggle-icon">⌄</span>
+                </button>
             </div>
 
         </div>
@@ -346,6 +354,25 @@
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') closeAboutLightbox();
         });
+        
+        // Timeline collapse/expand functionality
+        const timelineToggle = document.getElementById('timeline-toggle');
+        const collapsedItems = document.getElementById('timeline-collapsed-items');
+        
+        if (timelineToggle && collapsedItems) {
+            timelineToggle.addEventListener('click', function () {
+                collapsedItems.classList.toggle('visible');
+                timelineToggle.classList.toggle('expanded');
+                
+                // Update button text
+                const textSpan = timelineToggle.querySelector('.toggle-text');
+                if (collapsedItems.classList.contains('visible')) {
+                    textSpan.textContent = 'Collapse timeline';
+                } else {
+                    textSpan.textContent = 'View more timeline items';
+                }
+            });
+        }
     </script>
 
 </body>
