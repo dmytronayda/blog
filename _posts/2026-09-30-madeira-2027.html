@@ -37,17 +37,19 @@ nav-menu: false
 						<span class="madeira-stat-label">Дати поїздки</span>
 					</div>
 				</div>
-				<div class="4u 12u$(small)">
-					<div class="box">
-						<span class="madeira-stat-num">€1000</span>
-						<span class="madeira-stat-label">Орієнтовна вартість із перельотом, проживанням, трансфером по острову, без їжі</span>
+					<div class="4u 12u$(small)">
+						<div class="box madeira-stat-cost">
+							<span class="madeira-stat-num">€770</span>
+							<span class="madeira-stat-label">Орієнтовна вартість із проживанням, трансфером по острову та організацією</span>
+							<span class="madeira-stat-out">Без їжі та перельоту</span>
+						</div>
 					</div>
-				</div>
 				<div class="4u$ 12u$(small)">
-					<div class="box">
-						<span class="madeira-stat-num">€330</span>
-						<span class="madeira-stat-label">Депозит для підтвердження</span>
-					</div>
+						<div class="box">
+							<span class="madeira-stat-num">€330</span>
+							<span class="madeira-stat-label">Депозит для підтвердження</span>
+							<span class="madeira-stat-out">Решта €440 оплачуються до 10 січня</span>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -79,7 +81,7 @@ nav-menu: false
 				<div class="6u$ 12u$(small)">
 					<div class="box">
 						<h3>Частина 2 — Сейшал</h3>
-						<p>14–16 лютого</p>
+							<p>14–16 лютого, 2 ночі</p>
 						<ul class="alt">
 							<li>Вілла поруч з океаном. Без басейну.</li>
 							<li>4 односпальні ліжка, 3 двоспальних.</li>
@@ -222,21 +224,20 @@ nav-menu: false
 	<section>
 		<div class="inner">
 			<header class="major">
-				<h2>Що входить у €1000</h2>
+				<h2>Що входить у €770</h2>
 			</header>
 			<div class="madeira-warning">
 				⚠️ Передоплата у розмірі <strong>€330</strong> на проживання обов'язкова та <strong>не повертається</strong> у випадку відмови від участі пізніше!
 			</div>
 			<div class="madeira-price">
-				<div class="madeira-amount">€1000 <small>/ особа</small></div>
+				<div class="madeira-amount">€770 <small>/ особа</small></div>
 				<ul class="alt madeira-breakdown">
 					<li><strong>План активностей та організація походів мною</strong> — весь маршрут по днях, реєстрація на треки, підготовлені локації та план кожного дня.</li>
-					<li><strong>Частина спільних витрат на проживання та організацію туру</strong> — ≈ €660. Оренда 2 вілл, переліт і проживання організатора. Це і є передоплата €330 для бронювання участі. Ще €330 потрібно буде доплатити в грудні 2026.</li>
-					<li><strong>Переліт Мюнхен ⇄ Фуншал</strong> — ≈ €250. Купується учасником самостійно; організатор допоможе з бронюванням та логістикою (добирання до аеропорту, вибір рейсу/часу).</li>
+					<li><strong>Частина спільних витрат на проживання та організацію туру</strong> — ≈ €660. Оренда 2 вілл, переліт і проживання організатора.</li>
 					<li><strong>Частина спільних витрат на трансфери</strong> по острову до/від локацій — ≈ €100.</li>
 				</ul>
 			</div>
-			<p class="madeira-note">Не входить: їжа — покупки в супермаркеті, ресторани тощо покриваються кожним учасником окремо.</p>
+			<p class="madeira-note">Не входить: їжа — покупки в супермаркеті, ресторани тощо покриваються кожним учасником окремо. Переліт Мюнхен ⇄ Фуншал — ≈ €250. Купується учасником самостійно; організатор допоможе з бронюванням та логістикою (добирання до аеропорту, вибір рейсу/часу).</p>
 			<p class="madeira-note">* Можемо обговорити варіант заміни учасника, але це скоріше виключення з правила.</p>
 		</div>
 	</section>
@@ -328,13 +329,26 @@ nav-menu: false
 		color: var(--m-highlight);
 		margin-bottom: 0.4em;
 	}
-	.madeira-stat-label {
-		font-size: 0.7em;
-		font-weight: 600;
-		letter-spacing: 0.25em;
-		text-transform: uppercase;
-		color: var(--m-muted);
-	}
+		.madeira-stat-label {
+			font-size: 0.7em;
+			font-weight: 600;
+			letter-spacing: 0.25em;
+			text-transform: uppercase;
+			color: var(--m-muted);
+		}
+		.madeira-stat-cost .madeira-stat-label {
+			letter-spacing: 0.18em;
+		}
+		.madeira-stat-out {
+			display: block;
+			margin-top: 0.7em;
+			font-size: 0.68em;
+			font-weight: 600;
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+			color: var(--m-muted);
+			opacity: 0.75;
+		}
 
 	/* Villa galleries */
 	.madeira-gallery {
