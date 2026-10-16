@@ -16,7 +16,7 @@
 .timeline-toggle-btn { display: flex; align-items: center; justify-content: center; width: fit-content; min-width: 18em; margin: 0 auto .75em; padding: 0.75em 1.5em; background: #2a2f4a; border: 1px solid _palette(border); color: _palette(fg); font-size: .9em; font-weight: 600; cursor: pointer; transition: all .2s ease; position: relative; z-index: 1; }
 .timeline-toggle-btn:hover { background: _palette(border-bg); }
 .timeline-toggle-btn.expanded { background: _palette(border-bg); }
-.toggle-icon { display: inline-block; margin-left: .5em; transition: transform .3s ease; }
+  .toggle-icon { display: none; margin-left: .5em; transition: transform .3s ease; }
 .timeline-toggle-btn.expanded .toggle-icon { transform: rotate(180deg); }
 .whats-new-image { display: block; margin: .75em 0 1.1em; max-width: 17.5em; overflow: hidden; border: 1px solid _palette(border); background: _palette(border-bg); }
 .whats-new-image img { display: block; width: 100%; height: auto; cursor: zoom-in; transition: opacity .2s ease-in-out; }
@@ -67,7 +67,7 @@
   .timeline-toggle-btn:hover { background: _palette(border-bg); }
   .timeline-toggle-btn.expanded { background: _palette(border-bg); }
   .timeline-collapsed.visible .cd-timeline-block { display: block; }
-  .toggle-icon { display: inline-block; margin-left: .5em; transition: transform .3s ease; }
+.toggle-icon { display: none; margin-left: .5em; transition: transform .3s ease; }
   .timeline-toggle-btn.expanded .toggle-icon { transform: rotate(180deg); }
   .timeline-toggle-btn.expanded .toggle-text::after { content: ' items'; }
   .archive-page > .inner { padding: 3em 0; }
