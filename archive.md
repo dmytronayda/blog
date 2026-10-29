@@ -7,10 +7,14 @@ nav-menu: true
 
 ## Links and recommendations
 
-A record of things I have shared in the [Right now]({{ site.baseurl }}/about.html#right-now) section. The newest items stay on the About page; older ones live here.
+A record of everything I have shared in the [Right now]({{ site.baseurl }}/about.html#right-now) section, including the latest updates that are also on the About page.
 
 ### October 2026
 
+- 🏆 Have a 4 boys challenge planned on 31 October 2026.
+- 🇩🇪 Visited my German teacher, Liliya Oleksiivna and her husband, Anatolii, at [Überlingen on lake Constance](https://en.wikipedia.org/wiki/Lake_Constance).
+- 📸 Moving to a free open-source screenshot tool for Mac [BetterShot](https://www.bettershot.site/). For the money, COMPLETELY FREE, that’s an outstanding piece of software.
+- 🎮 Played this awesome estimation game for several days now and loved it: [fermi.gg](https://fermi.gg/)
 - 🎬 Watched [Holy Man](https://en.wikipedia.org/wiki/Holy_Man) movie with Eddie Murphy and loved it. Great heartwarming romantic comedy.
 - 🏞️ I created a photo album online and had it printed and delivered as a present for my friend, Sania E. I can really recommend [Rossmann Fotowelt](https://www.rossmann-fotowelt.de/). An album with 20 photos, including delivery, costs €17.44. Nicht schlecht!
   <figure class="whats-new-image">
