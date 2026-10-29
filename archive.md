@@ -12,6 +12,13 @@ A record of everything I have shared in the [Right now]({{ site.baseurl }}/about
 ### October 2026
 
 - 🏆 Have a 4 boys challenge planned on 31 October 2026.
+- Done my first ever [Радіодиктант Єдності](https://suspilne.media/culture/1434849-radiodiktant-nacionalnoi-ednosti-de-sluhati-koli-pisati-i-kudi-nadsilati-na-perevirku/) 27.10.2026 and plan to do it with my friends next year. 🇺🇦
+  <figure class="whats-new-image">
+    <img src="{{ site.baseurl }}/assets/images/whats-new/2026-10-radiodiktant-1.jpg" alt="Handwritten Radiodiktant text, page 1" onclick="openLightbox(this.src)" />
+  </figure>
+  <figure class="whats-new-image">
+    <img src="{{ site.baseurl }}/assets/images/whats-new/2026-10-radiodiktant-2.jpg" alt="Handwritten Radiodiktant text, page 2" onclick="openLightbox(this.src)" />
+  </figure>
 - 🇩🇪 Visited my German teacher, Liliya Oleksiivna and her husband, Anatolii, at [Überlingen on lake Constance](https://en.wikipedia.org/wiki/Lake_Constance).
 - 📸 Moving to a free open-source screenshot tool for Mac [BetterShot](https://www.bettershot.site/). For the money, COMPLETELY FREE, that’s an outstanding piece of software.
 - 🎮 Played this awesome estimation game for several days now and loved it: [fermi.gg](https://fermi.gg/)
