@@ -14,13 +14,13 @@ The first draft included 100 pull-ups, 200 push-ups, and 300 air squats per pers
 
 We met at [SPORTS4You](https://sports4you.org/) at 9am on Saturday. The workout was 20 rounds of Cindy: 5 pull-ups, 10 push-ups, and 15 air squats, with a two-hour cap. Scaling was fine. Some of us used bands or ring rows for pull-ups, and push-ups from the knees were allowed.
 
-<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-1-poster.jpg" src="/assets/videos/challenge-day-1.mp4"></video>
+<figure class="whats-new-image"><video controls playsinline preload="metadata" poster="/assets/images/challenge-day-1-poster.jpg" src="/assets/videos/challenge-day-1.mp4" style="display: block; width: 100%; height: auto;"></video></figure>
 
 We finished all 20 rounds in about an hour.
 
-![The gym crew after the workout](/assets/images/challenge-day-1.jpg)
+<figure class="whats-new-image"><img src="/assets/images/challenge-day-1.jpg" alt="The gym crew after the workout" onclick="openLightbox(this.src)" /></figure>
 
-<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-2-poster.jpg" src="/assets/videos/challenge-day-2.mp4"></video>
+<figure class="whats-new-image"><video controls playsinline preload="metadata" poster="/assets/images/challenge-day-2-poster.jpg" src="/assets/videos/challenge-day-2.mp4" style="display: block; width: 100%; height: auto;"></video></figure>
 
 # Sauna and ice buckets
 
@@ -30,7 +30,7 @@ Then we went to the sauna for 10 minutes, followed by ice-cold buckets over our 
 
 Next came about an hour on the bike to the Starnberger See. We ate at [Stark's Burger](https://starksburger.de/), and it was one of the best burgers I have had in Germany. Worth the ride.
 
-![Before the ride to the burger](/assets/images/challenge-day-2.jpg)
+<figure class="whats-new-image"><img src="/assets/images/challenge-day-2.jpg" alt="The group before the ride to the burger" onclick="openLightbox(this.src)" /></figure>
 
 # Bowling
 
