@@ -1,6 +1,7 @@
 ---
 title: 'A challenge day with friends: 20 Rounds of Cindy, Sauna, Burgers, and Bowling Strikes'
 layout: post
+banner_image: assets/images/challenge-day-2.jpg
 description: 'A full challenge day with three friends in Munich: a Cindy workout, a sauna, a bike ride to a burger, and bowling.'
 nav-menu: true
 ---
@@ -13,7 +14,7 @@ The first draft included 100 pull-ups, 200 push-ups, and 300 air squats per pers
 
 We met at [SPORTS4You](https://sports4you.org/) at 9am on Saturday. The workout was 20 rounds of Cindy: 5 pull-ups, 10 push-ups, and 15 air squats, with a two-hour cap. Scaling was fine. Some of us used bands or ring rows for pull-ups, and push-ups from the knees were allowed.
 
-<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-1.jpg" src="/assets/videos/challenge-day-1.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-1-poster.jpg" src="/assets/videos/challenge-day-1.mp4"></video>
 
 We finished all 20 rounds in about an hour.
 
