@@ -13,13 +13,13 @@ The first draft included 100 pull-ups, 200 push-ups, and 300 air squats per pers
 
 We met at [SPORTS4You](https://sports4you.org/) at 9am on Saturday. The workout was 20 rounds of Cindy: 5 pull-ups, 10 push-ups, and 15 air squats, with a two-hour cap. Scaling was fine. Some of us used bands or ring rows for pull-ups, and push-ups from the knees were allowed.
 
-<video controls playsinline preload="metadata" width="100%" src="/assets/videos/challenge-day-1.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-1.jpg" src="/assets/videos/challenge-day-1.mp4"></video>
 
 We finished all 20 rounds in about an hour.
 
 ![The gym crew after the workout](/assets/images/challenge-day-1.jpg)
 
-<video controls playsinline preload="metadata" width="100%" src="/assets/videos/challenge-day-2.mp4"></video>
+<video controls playsinline preload="metadata" width="100%" poster="/assets/images/challenge-day-2-poster.jpg" src="/assets/videos/challenge-day-2.mp4"></video>
 
 # Sauna and ice buckets
 
