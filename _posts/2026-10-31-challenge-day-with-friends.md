@@ -5,7 +5,7 @@ description: 'A full challenge day with three friends in Munich: a Cindy workout
 nav-menu: true
 ---
 
-On Saturday, 31 October 2027, four of us spent a whole day on a challenge: Peter, Dima, Alex, and me. I got inspired by this short [Instagram Reel](https://www.instagram.com/reel/DdOzm4Gh5gs/?xtok=Z2duZWMwOHRkZXFl), put the draft challenge plan together and setup our WhatsApp group. That draft has changed a lot. 😁 
+On Saturday, 31 October 2026, four of us spent a whole day on a challenge: Peter, Dima, Alex, and me. I got inspired by this short [Instagram Reel](https://www.instagram.com/reel/DdOzm4Gh5gs/?xtok=Z2duZWMwOHRkZXFl), put the draft challenge plan together and setup our WhatsApp group. That draft has changed a lot. 😁 
 
 The first draft included 100 pull-ups, 200 push-ups, and 300 air squats per person, plus 60 km of biking each, plus 100 3-pointer basketball shots each, plus 2.5 Liter beers each. I generally called it "a day of men power and testosterone but not idiocracy." In the end, the version we did was simpler, and that was for sure the right call.
 
