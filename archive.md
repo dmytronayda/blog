@@ -9,9 +9,14 @@ nav-menu: true
 
 A record of everything I have shared in the [Right now]({{ site.baseurl }}/about.html#right-now) section, including the latest updates that are also on the About page.
 
+### November 2026
+
+- 🥾 [Hiked to Entenlochklamm]({{ site.baseurl }}/2026/11/18/entenlochklamm-hike-with-friends.html) and enjoyed a beautiful fall in Tirol 🇦🇹
+- 💻 On 10 November 2026, I published my first pull request to the commercial product I work on. [Read more here]({{ site.baseurl }}/2026/11/10/my-first-pr-on-production.html). Followed by publishing my second production update to the internal production tool on 17 November 2026.
+
 ### October 2026
 
-- 🏆 Have a 4 boys challenge planned on 31 October 2026.
+- 🏆 Organized the [4 guys challenge]({{ site.baseurl }}/2026/10/31/challenge-day-with-friends.html) on 31 October 2026. It was ❤️‍🔥
 - Done my first ever [Радіодиктант Єдності](https://suspilne.media/culture/1434849-radiodiktant-nacionalnoi-ednosti-de-sluhati-koli-pisati-i-kudi-nadsilati-na-perevirku/) 27.10.2026 and plan to do it with my friends next year. 🇺🇦
   <figure class="whats-new-image">
     <img src="{{ site.baseurl }}/assets/images/whats-new/2026-10-radiodiktant-1.jpg" alt="Handwritten Radiodiktant text, page 1" onclick="openLightbox(this.src)" />
