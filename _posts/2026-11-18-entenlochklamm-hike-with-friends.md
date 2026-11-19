@@ -1,6 +1,7 @@
 ---
 title: 'An autumn hike to the Entenlochklamm gorge'
 layout: post
+banner_image: assets/images/entenlochklamm-3.jpg
 description: 'A Sunday hike to the Entenlochklamm gorge near Kössen with three friends: the plan, the route, and what Komoot recorded.'
 nav-menu: true
 ---
@@ -36,5 +37,19 @@ I recorded the hike. Here is the [finished tour](https://www.komoot.com/de-de/to
 
 That is close to the plan: a bit shorter than the 13.4 km, and 450 m of ascent against the 480 m originally planned.
 
+Komoot also made a flyover video of the route:
+
+<figure class="whats-new-image"><video controls playsinline preload="metadata" poster="/assets/images/entenlochklamm-flyover-poster.jpg" src="/assets/videos/entenlochklamm-flyover.mp4" style="display: block; width: 100%; height: auto;"></video></figure>
+
 # How it went
 It was an easy, enjoyable hike filled with sunshine and laughter. One annoying part was that we had to walk about 1-2 km along a car road that doesn't really have sidewalks. Otherwise, the views were simply awesome.
+
+<figure class="whats-new-image"><img src="/assets/images/entenlochklamm-1.jpg" alt="Dancing on the suspension bridge over the Entenlochklamm gorge" onclick="openLightbox(this.src)" /></figure>
+
+<figure class="whats-new-image"><img src="/assets/images/entenlochklamm-2.jpg" alt="Two friends posing in tree pose among golden larches" onclick="openLightbox(this.src)" /></figure>
+
+<figure class="whats-new-image"><img src="/assets/images/entenlochklamm-3.jpg" alt="A playful kick pose on the trail with the golden larch forest behind" onclick="openLightbox(this.src)" /></figure>
+
+Here is a [video from the hike on Instagram](https://www.instagram.com/p/DfxfT_tsn5Q/):
+
+<figure class="whats-new-image"><iframe src="https://www.instagram.com/p/DfxfT_tsn5Q/embed" title="Instagram video from the Entenlochklamm hike" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true" style="display: block; max-width: 100%; border: 0;"></iframe></figure>
