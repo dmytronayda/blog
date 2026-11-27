@@ -1,0 +1,205 @@
+---
+layout: madeira
+title: "Мадейра 2027 — що взяти з собою"
+description: "Чек-лист речей для походу на Мадейрі: обов'язкові, рекомендовані та необов'язкові."
+permalink: /madeira-packing/
+nav-menu: false
+---
+
+<style>
+  .pack { --ink:#1c1f1d; --muted:#666d68; --line:#dfe3dd; --brand:#0f7068; --accent:#f28c28; --ok:#1d8a52; --card:#fff; --chip:#e9efec;
+    max-width: 640px; margin: 0 auto; padding: 16px max(16px, env(safe-area-inset-left, 0px)) 48px max(16px, env(safe-area-inset-right, 0px)); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.5; box-sizing: border-box; }
+  @media (prefers-color-scheme: dark) {
+    .pack:not([data-theme="light"]) { --ink:#eceee9; --muted:#a2aaa4; --line:#2c332f; --brand:#3fb3a8; --accent:#f5a24a; --ok:#55c283; --card:#1c211e; --chip:#252c28; }
+  }
+  .pack[data-theme="dark"] { --ink:#eceee9; --muted:#a2aaa4; --line:#2c332f; --brand:#3fb3a8; --accent:#f5a24a; --ok:#55c283; --card:#1c211e; --chip:#252c28; }
+  .pack * { box-sizing: border-box; }
+  .pack h1 { font-size: 1.6rem; margin: 4px 0 6px; color: var(--brand); }
+  .pack .lede { color: var(--muted); margin: 0 0 14px; font-size: 0.97rem; }
+  .pack .progress { position: sticky; top: 0; z-index: 2; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin: 8px 0 16px; }
+  .pack .bar { height: 8px; background: var(--chip); border-radius: 999px; overflow: hidden; margin-top: 6px; }
+  .pack .bar > span { display: block; height: 100%; background: var(--ok); width: 0; transition: width .2s ease; }
+  .pack .rules { display: grid; gap: 8px; margin: 0 0 16px; }
+  .pack .rule { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 10px 12px; font-size: 0.95rem; }
+  .pack .rule b { color: var(--ink); }
+  .pack h2 { font-size: 1.15rem; margin: 26px 0 4px; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .pack h2 small { font-size: 0.85rem; color: var(--muted); font-weight: 400; }
+  .pack .hint { color: var(--muted); font-size: 0.88rem; margin: 0 0 8px; }
+  .pack ul { list-style: none; margin: 0; padding: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .pack li { border-top: 1px solid var(--line); }
+  .pack li:first-child { border-top: 0; }
+  .pack label { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; min-height: 48px; cursor: pointer; }
+  .pack input[type="checkbox"] { width: 22px; height: 22px; margin: 1px 0 0; accent-color: var(--ok); flex: 0 0 auto; }
+  .pack .txt { font-size: 1rem; }
+  .pack .txt small { display: block; color: var(--muted); font-size: 0.85rem; }
+  .pack .done .txt { color: var(--muted); text-decoration: line-through; }
+  .pack .new { display: inline-block; font-size: 0.72rem; background: var(--accent); color: #111; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: middle; text-decoration: none; }
+  .pack .reset { margin-top: 24px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 10px; padding: 10px 14px; font: inherit; font-size: 0.9rem; min-height: 44px; width: 100%; }
+  .pack .note { color: var(--muted); font-size: 0.85rem; margin-top: 18px; }
+  .pack :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .pack .bar > span { transition: none; } }
+</style>
+
+<div id="madeira-packing" class="pack">
+
+  <h1>Що взяти з собою</h1>
+  <p class="lede">Мадейра, 9–16 лютого 2027. Чек-лист для походів з невеликим рюкзаком. Відмічай, що вже зібрано.</p>
+
+  <div class="progress">
+    <div><b>[[ done ]]</b> з [[ total ]] зібрано</div>
+    <div class="bar"><span :style="{ width: pct + '%' }"></span></div>
+  </div>
+
+  <div class="rules">
+    <div class="rule"><b>Вага.</b> Рюкзак — орієнтовно 10% твоєї ваги. Усе бажано легке.</div>
+    <div class="rule"><b>Dry-bag.</b> Речі в zip-пакетах або dry-bag, щоб не намокли під дощем.</div>
+    <div class="rule"><b>Баночки.</b> Гігієна і креми в дорожніх баночках 100 мл / 10 г — цього вистачить на тиждень.</div>
+    <div class="rule"><b>Найважливіше.</b> Рюкзак, взуття, особиста аптечка. Обов'язково захист від сонця.</div>
+  </div>
+
+  <template v-for="group in groups" :key="group.id">
+    <h2>[[ group.title ]] <small>[[ doneIn(group) ]] / [[ group.items.length ]]</small></h2>
+    <p class="hint">[[ group.hint ]]</p>
+    <ul>
+      <li v-for="item in group.items" :key="item.id" :class="{ done: checked[item.id] }">
+        <label>
+          <input type="checkbox" v-model="checked[item.id]" @change="save">
+          <span class="txt">
+            [[ item.name ]]<span v-if="item.isNew" class="new">нове</span>
+            <small v-if="item.note">[[ item.note ]]</small>
+          </span>
+        </label>
+      </li>
+    </ul>
+  </template>
+
+  <button class="reset" type="button" @click="resetAll">Скинути відмітки</button>
+
+  <p class="note">
+    Чек-лист адаптовано з авторського гіда Вікторії Беги (@camino_beha). Ціни і посилання тут не вказані — це список речей, а не покупок.
+    Відмітки зберігаються тільки в цьому браузері.
+  </p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.prod.js"></script>
+<script>
+(function () {
+  var KEY = "madeira-packing-v1";
+
+  var GROUPS = [
+    {
+      id: "required",
+      title: "Обов'язкове",
+      hint: "Без цього не йдемо.",
+      items: [
+        { id: "passport", name: "Паспорт / ID-карта" },
+        { id: "cash", name: "Готівка", note: "Не всюди можна картою, особливо трансфери." },
+        { id: "phone", name: "Мобільний телефон", note: "У водонепроникному чохлі." },
+        { id: "charger", name: "Зарядний пристрій" },
+        { id: "backpack", name: "Рюкзак 25–30 л з поясним ременем", note: "Примір обов'язковий. Рюкзак має сидіти на стегнах." },
+        { id: "poncho", name: "Дощовик-пончо (на себе й рюкзак)", note: "Або мембранна куртка + рейнкавер." },
+        { id: "shoes", name: "Розношені кросівки для трейлу (1 пара)", note: "Розноси за місяць до походу." },
+        { id: "sandals", name: "Сандалі / легкі кросівки на заміну" },
+        { id: "cap", name: "Кепка / панамка" },
+        { id: "socks", name: "2–3 пари трекінгових шкарпеток", note: "Не бавовняні: вона тримає вологу і спричиняє мозолі." },
+        { id: "spf", name: "Сонцезахисний крем SPF 50+" },
+        { id: "firstaid", name: "Особиста аптечка", note: "Ліки з рецептом бери з собою." },
+        { id: "needle", name: "Голка + антисептик", note: "Для проколювання великих пухирів." },
+        { id: "earplugs", name: "Беруші" },
+        { id: "headlamp", name: "Налобний ліхтарик", note: "Для раннього виходу о 5:00.", isNew: true }
+      ]
+    },
+    {
+      id: "recommended",
+      title: "Рекомендоване",
+      hint: "Орієнтуйся на погоду.",
+      items: [
+        { id: "powerbank", name: "Павербанк" },
+        { id: "shower-slides", name: "Гумові тапки для душу" },
+        { id: "knee", name: "Наколінники / тейпи / еластичний бинт" },
+        { id: "windbreaker", name: "Вітровка / легка вітрозахисна кофта" },
+        { id: "longsleeve", name: "Легка сорочка з довгим рукавом / лонгслів" },
+        { id: "pants", name: "Легкі штани / легінси (2 пари)" },
+        { id: "shorts", name: "Шорти" },
+        { id: "fleece", name: "Тепла легка фліска" },
+        { id: "tshirts", name: "2–3 швидковисихаючі футболки" },
+        { id: "underwear", name: "2–3 пари білизни" },
+        { id: "sleepwear", name: "1–2 спортивні бра, піжама або речі для сну" },
+        { id: "poles", name: "Трекінгові палиці", note: "Не проходять у ручну поклажу." },
+        { id: "towel", name: "Рушник швидковисихаючий" },
+        { id: "sleepmask", name: "Маска для сну" },
+        { id: "deodorant", name: "Гігієнічний дезодорант" },
+        { id: "brush", name: "Щітка, резинка для волосся" },
+        { id: "swimsuit", name: "Купальник" }
+      ]
+    },
+    {
+      id: "optional",
+      title: "Необов'язкове",
+      hint: "Можна купити на місці або пропустити.",
+      items: [
+        { id: "bottle", name: "Пляшка для води" },
+        { id: "thermos", name: "Термочашка / термос" },
+        { id: "carabiners", name: "1–2 карабіни, щоб чіпляти речі" },
+        { id: "wipes", name: "Серветки" },
+        { id: "bumbag", name: "Бананка" },
+        { id: "sunglasses", name: "Сонцезахисні окуляри" },
+        { id: "clips", name: "Прищіпки для сушіння" },
+        { id: "ecobag", name: "Еко-сумка для продуктів" },
+        { id: "notebook", name: "Блокнот + ручка" },
+        { id: "insurance", name: "Туристичне страхування", note: "Перевірте, чи поліс покриває піший трекінг." },
+        { id: "lipbalm", name: "Бальзам для губ SPF" },
+        { id: "buff", name: "Баф або легкий шарф" },
+        { id: "hat", name: "Легка шапка" },
+        { id: "insect", name: "Засоби від комах" },
+        { id: "laundry", name: "Засіб для прання одягу / мило" },
+        { id: "bags", name: "Пакети для брудного одягу / сміття" },
+        { id: "compression", name: "Компресійні гольфи", note: "Допомагають після довгих переходів." },
+        { id: "electrolytes", name: "Електроліти", note: "Бери при спеці або сильному потовиділенні." }
+      ]
+    }
+  ];
+
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; }
+  }
+  function store(obj) {
+    try { localStorage.setItem(KEY, JSON.stringify(obj)); } catch (e) { /* private mode: ignore */ }
+  }
+
+  Vue.createApp({
+    delimiters: ["[[", "]]"],
+    data: function () {
+      return { groups: GROUPS, checked: load() };
+    },
+    computed: {
+      total: function () {
+        return GROUPS.reduce(function (n, g) { return n + g.items.length; }, 0);
+      },
+      done: function () {
+        var c = this.checked;
+        return GROUPS.reduce(function (n, g) {
+          return n + g.items.filter(function (i) { return !!c[i.id]; }).length;
+        }, 0);
+      },
+      pct: function () {
+        return this.total ? Math.round((this.done / this.total) * 100) : 0;
+      }
+    },
+    methods: {
+      doneIn: function (group) {
+        var c = this.checked;
+        return group.items.filter(function (i) { return !!c[i.id]; }).length;
+      },
+      save: function () { store(this.checked); },
+      resetAll: function () {
+        if (window.confirm("Скинути всі відмітки?")) {
+          this.checked = {};
+          store({});
+        }
+      }
+    }
+  }).mount("#madeira-packing");
+})();
+</script>
