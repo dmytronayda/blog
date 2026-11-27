@@ -67,6 +67,7 @@ nav-menu: false
           <span class="txt">
             [[ item.name ]]<span v-if="item.isNew" class="new">нове</span>
             <small v-if="item.note">[[ item.note ]]</small>
+            <small v-if="item.options">Варіанти: [[ item.options.join(' · ') ]]</small>
           </span>
         </label>
       </li>
@@ -99,7 +100,7 @@ nav-menu: false
         { id: "charger", name: "Зарядний пристрій" },
         { id: "backpack", name: "Рюкзак 25–30 л з поясним ременем", note: "Примір обов'язковий. Рюкзак має сидіти на стегнах." },
         { id: "poncho", name: "Дощовик-пончо (на себе й рюкзак)", note: "Або мембранна куртка + рейнкавер." },
-        { id: "shoes", name: "Розношені кросівки для трейлу (1 пара)", note: "Розноси за місяць до походу." },
+        { id: "shoes", name: "Кросівки для трейлу або хайкінгові (1 пара)", note: "Розноси за місяць до походу. Найкраще приміряти в магазині.", options: ["Merrell Agility Peak 5 (є в мене)", "Columbia", "Salomon", "Scarpa", "La Sportiva", "Hoka (м'яка підошва)"] },
         { id: "sandals", name: "Сандалі / легкі кросівки на заміну" },
         { id: "cap", name: "Кепка / панамка" },
         { id: "socks", name: "2–3 пари трекінгових шкарпеток", note: "Не бавовняні: вона тримає вологу і спричиняє мозолі." },
